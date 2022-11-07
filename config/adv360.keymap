@@ -19,79 +19,6 @@
       };
     };
 
-    macros {
-        cmd_alt_shift_1: cmd_alt_shift_1 {
-            label = "cmd_alt_shift_1";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_press &kp LALT>
-                , <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N1>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LALT>
-                , <&macro_release &kp LGUI>
-                ;
-        };
-        cmd_alt_shift_2: cmd_alt_shift_2 {
-            label = "cmd_alt_shift_2";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_press &kp LALT>
-                , <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N2>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LALT>
-                , <&macro_release &kp LGUI>
-                ;
-        };
-        cmd_alt_shift_3: cmd_alt_shift_3 {
-            label = "cmd_alt_shift_3";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_press &kp LALT>
-                , <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N3>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LALT>
-                , <&macro_release &kp LGUI>
-                ;
-        };
-        cmd_alt_shift_4: cmd_alt_shift_4 {
-            label = "cmd_alt_shift_4";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_press &kp LALT>
-                , <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N4>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LALT>
-                , <&macro_release &kp LGUI>
-                ;
-        };
-        cmd_alt_shift_5: cmd_alt_shift_5 {
-            label = "cmd_alt_shift_5";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_press &kp LALT>
-                , <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N5>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LALT>
-                , <&macro_release &kp LGUI>
-                ;
-        };
-    };
-
   keymap {
     compatible = "zmk,keymap";
 
@@ -133,7 +60,7 @@
     };
     global_macros {
       bindings = <
-        &trans &cmd_alt_shift_1 &cmd_alt_shift_2 &cmd_alt_shift_3 &cmd_alt_shift_4 &cmd_alt_shift_5 &tog 1                                                       &mo 3 &trans &trans &trans &trans &trans &trans
+        &trans &kp LG(LA(LS(N1))) &kp LG(LA(LS(N2))) &kp LG(LA(LS(N3))) &kp LG(LA(LS(N4))) &kp LG(LA(LS(N5))) &tog 1                                                       &mo 3 &trans &trans &trans &trans &trans &trans
         &trans &trans &trans &trans &trans &trans  &none                                                       &none &trans &trans &trans &trans  &trans  &trans
         &trans &trans &trans &trans &trans &trans  &none        &trans &trans             &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
         &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &trans &trans &trans  &trans  &trans
