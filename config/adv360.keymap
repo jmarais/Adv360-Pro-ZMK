@@ -19,6 +19,84 @@
       };
     };
 
+    macros {
+        cmd_alt_shift_1: cmd_alt_shift_1 {
+            label = "cmd_alt_shift_1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp LALT>
+                , <&macro_press &kp LSHFT>
+                , <&macro_press &kp N1>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp N1>
+                ;
+        };
+        cmd_alt_shift_2: cmd_alt_shift_2 {
+            label = "cmd_alt_shift_2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp LALT>
+                , <&macro_press &kp LSHFT>
+                , <&macro_press &kp N2>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp N2>
+                ;
+        };
+        cmd_alt_shift_3: cmd_alt_shift_3 {
+            label = "cmd_alt_shift_3";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp LALT>
+                , <&macro_press &kp LSHFT>
+                , <&macro_press &kp N3>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp N3>
+                ;
+        };
+        cmd_alt_shift_4: cmd_alt_shift_4 {
+            label = "cmd_alt_shift_4";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp LALT>
+                , <&macro_press &kp LSHFT>
+                , <&macro_press &kp N4>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp N4>
+                ;
+        };
+        cmd_alt_shift_5: cmd_alt_shift_5 {
+            label = "cmd_alt_shift_5";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp LALT>
+                , <&macro_press &kp LSHFT>
+                , <&macro_press &kp N5>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp N5>
+                ;
+        };
+    };
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -26,7 +104,7 @@
       bindings = <
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                        &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp DEL   &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
+        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &mo 4           &kp DEL   &kp LALT             &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B        &none     &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &mo 2     &kp GRAVE &kp LGUI &kp LEFT &kp RIGHT               &kp SPACE &kp LCTRL &kp END              &kp PG_DN &kp ENTER &kp BSPC               &kp DOWN &kp UP  &kp LBKT &kp RBKT &mo 2
       >;
@@ -56,6 +134,15 @@
         &none &none        &none        &none        &none        &none        &rgb_ug RGB_MEFS_CMD 5                 &none &none             &none &none                 &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none        &none        &none
         &bt BT_CLR   &none        &none        &none        &none        &none                               &none           &none      &none      &none &none &none      &none      &none                                  &none        &none        &none        &none        &none        &none
         &none &none        &none        &bl BL_INC   &bl BL_DEC                                       &rgb_ug RGB_TOG &bl BL_TOG &none                  &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none        &none        &none
+      >;
+    };
+    global_macros {
+      bindings = <
+        &trans &cmd_alt_shift_1 &cmd_alt_shift_2 &cmd_alt_shift_3 &cmd_alt_shift_4 &cmd_alt_shift_5 &tog 1                                                       &mo 3 &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans  &none                                                       &none &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans  &none        &trans &trans             &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans        &none  &none  &trans &none &none &trans &none  &none        &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans               &trans &trans &trans             &trans &trans &trans              &trans &trans &trans  &trans  &trans
       >;
     };
   };
