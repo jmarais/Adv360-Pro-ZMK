@@ -28,11 +28,10 @@
                 = <&macro_press &kp LGUI>
                 , <&macro_press &kp LALT>
                 , <&macro_press &kp LSHFT>
-                , <&macro_press &kp N1>
-                , <&macro_release &kp LGUI>
-                , <&macro_release &kp LALT>
+                , <&macro_tap &kp N1>
                 , <&macro_release &kp LSHFT>
-                , <&macro_release &kp N1>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp LGUI>
                 ;
         };
         cmd_alt_shift_2: cmd_alt_shift_2 {
@@ -43,11 +42,10 @@
                 = <&macro_press &kp LGUI>
                 , <&macro_press &kp LALT>
                 , <&macro_press &kp LSHFT>
-                , <&macro_press &kp N2>
-                , <&macro_release &kp LGUI>
-                , <&macro_release &kp LALT>
+                , <&macro_tap &kp N2>
                 , <&macro_release &kp LSHFT>
-                , <&macro_release &kp N2>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp LGUI>
                 ;
         };
         cmd_alt_shift_3: cmd_alt_shift_3 {
@@ -58,11 +56,10 @@
                 = <&macro_press &kp LGUI>
                 , <&macro_press &kp LALT>
                 , <&macro_press &kp LSHFT>
-                , <&macro_press &kp N3>
-                , <&macro_release &kp LGUI>
-                , <&macro_release &kp LALT>
+                , <&macro_tap &kp N3>
                 , <&macro_release &kp LSHFT>
-                , <&macro_release &kp N3>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp LGUI>
                 ;
         };
         cmd_alt_shift_4: cmd_alt_shift_4 {
@@ -73,11 +70,10 @@
                 = <&macro_press &kp LGUI>
                 , <&macro_press &kp LALT>
                 , <&macro_press &kp LSHFT>
-                , <&macro_press &kp N4>
-                , <&macro_release &kp LGUI>
-                , <&macro_release &kp LALT>
+                , <&macro_tap &kp N4>
                 , <&macro_release &kp LSHFT>
-                , <&macro_release &kp N4>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp LGUI>
                 ;
         };
         cmd_alt_shift_5: cmd_alt_shift_5 {
@@ -88,11 +84,10 @@
                 = <&macro_press &kp LGUI>
                 , <&macro_press &kp LALT>
                 , <&macro_press &kp LSHFT>
-                , <&macro_press &kp N5>
-                , <&macro_release &kp LGUI>
-                , <&macro_release &kp LALT>
+                , <&macro_tap &kp N5>
                 , <&macro_release &kp LSHFT>
-                , <&macro_release &kp N5>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp LGUI>
                 ;
         };
     };
